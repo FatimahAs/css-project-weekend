@@ -1,28 +1,104 @@
-* { padding: 0; margin: 0; font-family: "Roboto", sans-serif; } body {
-background-color: #fff8f0; } /***** Start Nav bar style *****/ .navbar {
-display: flex; flex-direction: row; justify-content: space-around;
-justify-items: center; background-color: white; border-radius: 2em; padding:
-0.5%; width: auto; margin: 1%; } .nav-img { display: flex; justify-items:
-center; margin: auto; width: 8%; } .menu-list { display: flex; flex-direction:
-row; justify-content: space-around; align-items: center; gap: 2rem; } .menu-list
-li { list-style: none; } .menu-list a { text-decoration: none; font-size: 1em;
-color: #717171; } .menu-list a:hover { color: #ffaa5e; } .menu-list button {
-background-color: #ffaa5e; width: 10em; height: 2em; border: 2px; border-radius:
-5%; border-color: #ffe06679; } .menu-list button:hover { background-color:
-#ffe066; } .menu-list button a { color: white; font-weight: 500; } .menu-list
-button a:hover { color: #ffffff; text-decoration: none; } /***** End Nav bar
-style *****/ /***** Start Header style *****/ header { display: flex;
-flex-direction: row; justify-items: center; /* justify-content: space-around; */
-/* background-color: #8bd6d966; */ margin: 2%; } .right-header { display: flex;
-justify-content: center; } .right-header img { width: 50%; height: auto;
-display: flex; justify-items: center; } .left-header { margin: auto; display:
-flex; flex-direction: row; justify-content: flex-end; flex-wrap: wrap; }
-.left-header h2 { font-size: 1em; text-transform: capitalize; color: #ffb95ec2;
-font-family: "DM Sans", sans-serif; } .left-header h2 span { font-size: 2.5em;
-color: #ff5e5bb1; font-family: "Hachi Maru Pop", cursive; } .left-header p {
-display: flex; justify-items: center; font-size: 1em; color: #6f7070cb;
-font-family: "DM Sans", sans-serif; } .left-header h3 { color: #6f7070cb; }
-/***** End Header style *****/ /***** Start section style *****/ section {
-background-color: #8bd6d95c; width: auto; height: auto; border-radius: 1em;
-padding: 0.5%; margin: 1%; } p { display: flex; justify-content: center; color:
-#717171; font-size: medium; } /***** End section style *****/
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Hachi+Maru+Pop&family=Qahiri&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./img/drink.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Penny Juice</title>
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <nav class="nav-bar">
+      <a href="./index.html"
+        ><img src="./img/logo.png" alt="pennyjuice-logo"
+      /></a>
+      <ul>
+        <li>
+          <a href="./index.html"><span class="orange">Home</span></a>
+        </li>
+        <li>
+          <a href="./childcare-juice.html"><span>Childcare Juice</span></a>
+        </li>
+      </ul>
+      <button><a href="./order.html">Order Now</a></button>
+    </nav>
+
+    <!-- End Navbar -->
+
+    <!-- Start main section -->
+    <section class="section-content">
+      <section class="sec">
+        <img src="./img/product.png" alt="" />
+        <div class="content">
+          <h3>
+            Premium Quality 100% Fruit Juice Concentrate.<br />
+            No Sugar Added. Non Refrigerated
+          </h3>
+          <div>
+            <p>
+              Get delicious and nutritious 100% fruit juice from Penny Juice of
+              America. We provide 100% blended fruit juice concentrates that are
+              specially made for kids and meet all the requirements of the FDA
+              with regard to subsidy and nutrition. Customers prefer our
+              products for their benefits, features, variety, service, and
+              competitive pricing. These blended fruit juice concentrates are
+              for all childcare centers and preschools. Penny Juice of America
+              uses only the highest quality fruit juice products.
+            </p>
+            <br />
+            <h4>Easy-To-Make Juice Concentrates</h4>
+            <p>
+              Prepare all flavors using seven parts water and one part juice
+              concentrate. You don’t need to refrigerate the concentrate before
+              or after opening it. Reduce cost per ounce, storage and handling
+              requirements.
+            </p>
+            <br />
+            <h4>Get Juice Concentrates in a Variety of Flavors</h4>
+            <p>
+              Kids love penny juice concentrates because it’s available in
+              various exciting flavors and colors. Each case contains six
+              half-gallon bottles of different flavors.
+            </p>
+            <ul>
+              <li>No contracts</li>
+              <li>Free delivery nationwide</li>
+              <li>Minimum order 1 case</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- End main section -->
+
+    <!-- Start Footer Section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-links">
+          <a href="#">Conditions</a>
+          <a href="#">Preferences</a>
+          <a href="#">Accessibility Policy</a>
+          <a href="#">Contact</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+
+        <div class="footer-contact">
+          <p>
+            Email: <a href="mailto:info@pennyjuice.com">info@pennyjuice.com</a>
+          </p>
+          <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+        </div>
+
+        <p class="footer-copy">&copy; 2025 Penny Juice. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- End Footer Section -->
+  </body>
+</html>
