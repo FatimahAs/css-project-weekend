@@ -16,7 +16,11 @@ a {
     color: #717171;
 }
 
-span {
+.orange {
+    color: #ffaa5e;
+}
+
+span:hover {
     color: #ffaa5e;
 }
 
